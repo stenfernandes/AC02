@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layoutMenuLateral"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/toolbar" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="20dp">
+            <TextView
+                android:id="@+id/cadastro_agendamento"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cadastrar Agendamento"
+                android:layout_marginTop="40dp"
+
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:id="@+id/text_servico"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Selecionar Serviço"
+                android:layout_marginTop="40dp"
+
+                android:layout_gravity="center"
+                 />
+
+            <Spinner
+                android:id="@+id/selecionar_servico"
+                android:layout_width="349dp"
+                android:layout_height="25dp"
+                android:layout_marginTop="40dp"
+                android:spinnerMode="dropdown"
+                android:layout_gravity="center"
+                 />
+
+            <TextView
+                android:id="@+id/text_data_hora"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Selecionar Data e Hora"
+                android:layout_marginTop="40dp"
+                android:layout_gravity="center"
+                />
+
+            <Spinner
+                android:id="@+id/Selecionar_data_horario"
+                android:layout_width="348dp"
+                android:layout_height="24dp"
+                android:layout_marginTop="40dp"
+
+                android:layout_gravity="center"
+                />
+
+
+            <Button
+
+                android:id="@+id/agendar"
+                android:layout_width="120dp"
+                android:layout_height="38dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/button_background"
+                android:radius="5dp"
+                android:text="Agendar"
+                android:textColor="@color/background"
+                android:layout_marginTop="40dp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <com.google.android.material.navigation.NavigationView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/menu_lateral"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true"
+        app:headerLayout="@layout/menu_lateral_cabecalho"
+        app:menu="@menu/menu_lateral" />
+
+
+</androidx.drawerlayout.widget.DrawerLayout>

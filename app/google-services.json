@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "363377210594",
+    "firebase_url": "https://emsapp-bemestar.firebaseio.com",
+    "project_id": "emsapp-bemestar",
+    "storage_bucket": "emsapp-bemestar.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:363377210594:android:ced0eeafc73569e3085abb",
+        "android_client_info": {
+          "package_name": "com.example.espacobemestar"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "363377210594-54nr3h7gcj48bsrbf1jr03fotop1q2rl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCuluLGmkF2pSQzVzokjqYVnzaXE-kAWU4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "363377210594-54nr3h7gcj48bsrbf1jr03fotop1q2rl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
