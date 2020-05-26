@@ -172,37 +172,6 @@ class TelaInicialActivity : DebugActivity() , NavigationView.OnNavigationItemSel
             // }
             R.id.nav_sair-> {
                 sairApp()
-            }            R.id.nav_servico -> {
-                onClickServico()
-            }
-            R.id.nav_profissionais -> {
-                onClickProfissionais()
-            }
-            R.id.nav_cadastro_agendamento -> {
-                Toast.makeText(this, "Realize seu Agendamento", Toast.LENGTH_SHORT).show()
-                onClickCadastroAgendamento()
-
-            }
-            R.id.nav_agendamentos -> {
-                onClickAgendamento()
-            }
-
-
-            //R.id.nav_ajuda -> {
-            //    Toast.makeText(this, "Estamos aqui para ajuda-lo", Toast.LENGTH_SHORT).show()
-           // }
-            R.id.nav_localizacao -> {
-               startActivity(Intent(this, MapaActivity::class.java))
-                onClickMapa()
-            }
-
-
-            // }
-            // R.id.nav_config -> {
-            //     Toast.makeText(this,"Clicou em configurações", Toast.LENGTH_SHORT).show()
-            // }
-            R.id.nav_sair-> {
-                sairApp()
             }
 
         }

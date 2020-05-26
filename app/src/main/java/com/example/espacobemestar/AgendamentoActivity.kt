@@ -235,6 +235,7 @@ class AgendamentoActivity: DebugActivity (), NavigationView.OnNavigationItemSele
     fun onClickAgendamento() {
         val intent = Intent(context, AgendamentoActivity::class.java)
         intent.putExtra("nome", "")
+        startActivityForResult(intent, 1)
     }
 
     fun onClickProfissionais() {

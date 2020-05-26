@@ -141,7 +141,7 @@ class CadastroAgendamentoActivity : DebugActivity (), NavigationView.OnNavigatio
 
             runOnUiThread {
                 Toast.makeText(context, "Agendamento Realizado", Toast.LENGTH_LONG).show()
-
+                onClickAgendamento()
             }
         }.start()
 
@@ -328,6 +328,7 @@ class CadastroAgendamentoActivity : DebugActivity (), NavigationView.OnNavigatio
     fun onClickAgendamento() {
         val intent = Intent(context, AgendamentoActivity::class.java)
         intent.putExtra("nome", "")
+        startActivityForResult(intent, 1)
     }
 
     fun onClickProfissionais() {
