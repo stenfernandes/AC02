@@ -65,7 +65,7 @@ class TelaInicialActivity : DebugActivity() , NavigationView.OnNavigationItemSel
         //clique do botão profissionais
         botao_profissionais.setOnClickListener {onClickProfissionais("Profissionais") }
         //clique do botão Agendamento
-        botao_agendamento.setOnClickListener {onClickServico() }
+        botao_agendamento.setOnClickListener {onClickAgendamento() }
 
 
     }

@@ -82,7 +82,7 @@ class ServicoActivity: DebugActivity (), NavigationView.OnNavigationItemSelected
     fun enviaNotificacao(servico: Servico){
         val intent = Intent (this, ServicoActivity::class.java)
         intent.putExtra("servico", servico)
-        NotificationUtil.create(this, 1, intent, "Título - EMSApp","Há um novo Serviço ${servico.nome}" )
+        NotificationUtil.create(this, 1, intent, "Espaço Bem Estar","Há um novo Serviço ${servico.nome}" )
     }
 
     // método sobrescrito para inflar o menu na Actionbar

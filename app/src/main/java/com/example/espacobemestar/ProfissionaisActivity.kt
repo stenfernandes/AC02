@@ -168,6 +168,24 @@ class ProfissionaisActivity: DebugActivity (), NavigationView.OnNavigationItemSe
         return true
     }
 
+    //função para sair app
+    private fun sairApp() {
+        val alerta = AlertDialog.Builder(this)
+        alerta.setTitle("Sair")
+        alerta.setMessage("Deseja realmente sair?")
+        alerta.setPositiveButton("Sim", DialogInterface.OnClickListener(
+            function = { dialog: DialogInterface, which: Int ->
+                val returnIntent = Intent()
+                returnIntent.putExtra("result","Saída do App")
+                setResult(Activity.RESULT_OK,returnIntent)
+                finish()
+            }))
+        alerta.setNegativeButton("Não", DialogInterface.OnClickListener(
+            function = { dialog: DialogInterface, which: Int -> }))
+        alerta.show()
+    }
+
+
     //variavel para sair confirmar saída da tela
     fun onClickServico() {
         val intent = Intent(context, ServicoActivity::class.java)
@@ -181,6 +199,7 @@ class ProfissionaisActivity: DebugActivity (), NavigationView.OnNavigationItemSe
         intent.putExtra("tituloTela", "Agendamento")
         //StartActivity que abre a tela
         startActivityForResult(intent, 1)
+
     }
 
     fun onClickProfissionais(nomeTela: String) {
@@ -218,22 +237,6 @@ class ProfissionaisActivity: DebugActivity (), NavigationView.OnNavigationItemSe
     }
 
 
-    //função para sair app
-    private fun sairApp() {
-        val alerta = AlertDialog.Builder(this)
-        alerta.setTitle("Sair")
-        alerta.setMessage("Deseja realmente sair?")
-        alerta.setPositiveButton("Sim", DialogInterface.OnClickListener(
-            function = { dialog: DialogInterface, which: Int ->
-                val returnIntent = Intent()
-                returnIntent.putExtra("result","Saída do App")
-                setResult(Activity.RESULT_OK,returnIntent)
-                finish()
-            }))
-        alerta.setNegativeButton("Não", DialogInterface.OnClickListener(
-            function = { dialog: DialogInterface, which: Int -> }))
-        alerta.show()
-    }
 
 
 }
