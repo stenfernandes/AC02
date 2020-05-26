@@ -14,6 +14,7 @@ import kotlinx.android.synthetic.main.login.*
 class MainActivity : DebugActivity() {
 
     private val context: Context get() = this
+    @RequiresApi(Build.VERSION_CODES.LOLLIPOP)
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.login)
@@ -94,7 +95,6 @@ class MainActivity : DebugActivity() {
             Toast.makeText(context, "$result", Toast.LENGTH_LONG).show()
         }
     }
-
 
 
 
