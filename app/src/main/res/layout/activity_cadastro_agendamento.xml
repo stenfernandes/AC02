@@ -18,20 +18,24 @@
             android:layout_height="match_parent"
             android:orientation="vertical"
             android:padding="20dp">
+
             <TextView
                 android:id="@+id/cadastro_agendamento"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Cadastrar Agendamento"
+                android:layout_gravity="center"
                 android:layout_marginTop="40dp"
+                android:text="Cadastrar Agendamento"
 
-                android:layout_gravity="center"/>
+                android:textColor="@color/colorPrimary"
+                android:textSize="20sp" />
 
             <TextView
                 android:id="@+id/text_servico"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Selecionar Serviço"
+                android:textSize="18sp"
                 android:layout_marginTop="40dp"
 
                 android:layout_gravity="center"
@@ -51,6 +55,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Selecionar Data e Hora"
+                android:textSize="18sp"
                 android:layout_marginTop="40dp"
                 android:layout_gravity="center"
                 />

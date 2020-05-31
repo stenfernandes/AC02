@@ -146,6 +146,11 @@ class ProfissionaisActivity: DebugActivity (), NavigationView.OnNavigationItemSe
             }
 
 
+            R.id.nav_contato -> {
+                onClickContato()
+            }
+
+
             //R.id.nav_ajuda -> {
             //    Toast.makeText(this, "Estamos aqui para ajuda-lo", Toast.LENGTH_SHORT).show()
             // }
@@ -232,6 +237,15 @@ class ProfissionaisActivity: DebugActivity (), NavigationView.OnNavigationItemSe
     fun onClickProfissionaisDetalhe(objetoservico: Profissionais) {
         val intent = Intent(context, ProfissionaisDetalheActivity::class.java)
         intent.putExtra("profissionais_detalhe", objetoservico)
+        //StartActivity que abre a tela
+        startActivityForResult(intent, 1)
+    }
+
+
+
+    fun onClickContato() {
+        val intent = Intent(context, ContatoActivity::class.java)
+        intent.putExtra("tituloTela", "Contato")
         //StartActivity que abre a tela
         startActivityForResult(intent, 1)
     }

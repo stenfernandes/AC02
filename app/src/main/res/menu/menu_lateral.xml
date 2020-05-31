@@ -24,6 +24,11 @@
            android:icon="@drawable/ic_chat_black"
            android:title="Fale Conosco" />-->
 
+        <item
+            android:id="@+id/nav_contato"
+            android:icon="@drawable/ic_local_black"
+            android:title="Entre em Contato" />
+
 
        <item
            android:id="@+id/nav_localizacao"

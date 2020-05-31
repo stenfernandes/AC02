@@ -165,6 +165,11 @@ class AgendamentoActivity: DebugActivity (), NavigationView.OnNavigationItemSele
             }
 
 
+            R.id.nav_contato -> {
+                onClickContato()
+            }
+
+
             //R.id.nav_ajuda -> {
             //    Toast.makeText(this, "Estamos aqui para ajuda-lo", Toast.LENGTH_SHORT).show()
             // }
@@ -244,6 +249,14 @@ class AgendamentoActivity: DebugActivity (), NavigationView.OnNavigationItemSele
         //StartActivity que abre a tela
         startActivityForResult(intent, 1)
     }
+
+    fun onClickContato() {
+        val intent = Intent(context, ContatoActivity::class.java)
+        intent.putExtra("tituloTela", "Contato")
+        //StartActivity que abre a tela
+        startActivityForResult(intent, 1)
+    }
+
 
     fun onClickMapa() {
         val intent = Intent(context, MapaActivity::class.java)

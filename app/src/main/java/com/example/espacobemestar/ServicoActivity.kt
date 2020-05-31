@@ -164,6 +164,11 @@ class ServicoActivity: DebugActivity (), NavigationView.OnNavigationItemSelected
             }
 
 
+            R.id.nav_contato -> {
+                onClickContato()
+            }
+
+
             //R.id.nav_ajuda -> {
             //    Toast.makeText(this, "Estamos aqui para ajuda-lo", Toast.LENGTH_SHORT).show()
             // }
@@ -249,6 +254,15 @@ class ServicoActivity: DebugActivity (), NavigationView.OnNavigationItemSelected
         //StartActivity que abre a tela
         startActivityForResult(intent, 1)
     }
+
+
+    fun onClickContato() {
+        val intent = Intent(context, ContatoActivity::class.java)
+        intent.putExtra("tituloTela", "Contato")
+        //StartActivity que abre a tela
+        startActivityForResult(intent, 1)
+    }
+
 
 
 

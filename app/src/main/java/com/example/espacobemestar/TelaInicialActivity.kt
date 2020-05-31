@@ -43,7 +43,7 @@ class TelaInicialActivity : DebugActivity() , NavigationView.OnNavigationItemSel
         val nome = args?.getString("nome")
 
         // recuperar parâmetro simplificado
-        Toast.makeText(context, "Bem-Vindo $nome", Toast.LENGTH_LONG).show()
+        Toast.makeText(context, "Bem-Vindo", Toast.LENGTH_LONG).show()
 
         //ATUALIZAR PROGRESSBAR2 INVISIVEL
         progressBar2.visibility = View.INVISIBLE
@@ -157,6 +157,11 @@ class TelaInicialActivity : DebugActivity() , NavigationView.OnNavigationItemSel
             }
 
 
+            R.id.nav_contato -> {
+                onClickContato()
+            }
+
+
             //R.id.nav_ajuda -> {
             //    Toast.makeText(this, "Estamos aqui para ajuda-lo", Toast.LENGTH_SHORT).show()
            // }
@@ -236,6 +241,16 @@ class TelaInicialActivity : DebugActivity() , NavigationView.OnNavigationItemSel
         //StartActivity que abre a tela
         startActivityForResult(intent, 1)
     }
+
+
+
+    fun onClickContato() {
+        val intent = Intent(context, ContatoActivity::class.java)
+        intent.putExtra("tituloTela", "Contato")
+        //StartActivity que abre a tela
+        startActivityForResult(intent, 1)
+    }
+
 
 
 
