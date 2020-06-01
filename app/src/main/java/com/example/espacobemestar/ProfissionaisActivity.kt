@@ -30,6 +30,8 @@ import kotlin.concurrent.schedule
 class ProfissionaisActivity: DebugActivity (), NavigationView.OnNavigationItemSelectedListener {
     private val context: Context get() = this
 
+
+
     private var profissionais = listOf<Profissionais>()
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -72,6 +74,8 @@ class ProfissionaisActivity: DebugActivity (), NavigationView.OnNavigationItemSe
         // infla o menu com os botões da ActionBar
         menuInflater.inflate(R.menu.menu_main, menu)
         // vincular evento de buscar
+
+
         (menu?.findItem(R.id.action_buscar)?.actionView as SearchView).setOnQueryTextListener(object : SearchView.OnQueryTextListener {
 
             override fun onQueryTextChange(newText: String): Boolean {
@@ -85,6 +89,7 @@ class ProfissionaisActivity: DebugActivity (), NavigationView.OnNavigationItemSe
             }
 
         })
+
         return true
     }
 
@@ -92,6 +97,9 @@ class ProfissionaisActivity: DebugActivity (), NavigationView.OnNavigationItemSe
     override fun onOptionsItemSelected(item: MenuItem?): Boolean {
         // id do item clicado
         val id = item?.itemId
+
+
+
         // verificar qual item foi clicado e mostrar a mensagem Toast na tela
         // a comparação é feita com o recurso de id definido no xml
         if  (id == R.id.action_buscar) {
@@ -127,8 +135,11 @@ class ProfissionaisActivity: DebugActivity (), NavigationView.OnNavigationItemSe
         menu_lateral.setNavigationItemSelectedListener (this)
     }
 
+
+
     //menu lateral
     override fun onNavigationItemSelected(item: MenuItem): Boolean {
+
         when (item.itemId) {
             R.id.nav_servico -> {
                 onClickServico()
@@ -143,6 +154,7 @@ class ProfissionaisActivity: DebugActivity (), NavigationView.OnNavigationItemSe
             }
             R.id.nav_agendamentos -> {
                 onClickAgendamento()
+                return true
             }
 
 

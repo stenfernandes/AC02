@@ -140,6 +140,7 @@ class TelaInicialActivity : DebugActivity() , NavigationView.OnNavigationItemSel
     }
 
     override fun onNavigationItemSelected(item: MenuItem): Boolean {
+
         when (item.itemId) {
             R.id.nav_servico -> {
                 onClickServico()
@@ -180,6 +181,7 @@ class TelaInicialActivity : DebugActivity() , NavigationView.OnNavigationItemSel
             }
 
         }
+
         layoutMenuLateral.closeDrawer(GravityCompat.START)
         return true
     }

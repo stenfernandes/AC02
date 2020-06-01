@@ -3,21 +3,21 @@
     <group android:checkableBehavior="single">
         <item
             android:id="@+id/nav_servico"
-            android:icon="@drawable/ic_disciplina_black"
+            android:icon="@drawable/ic_spa_servico_black"
             android:title="Serviços"
-            android:checked="true" />
+            />
         <item
             android:id="@+id/nav_profissionais"
-            android:icon="@drawable/ic_forum_black"
+            android:icon="@drawable/ic_profissionais_black"
             android:title="Profissionais" />
         <item
             android:id="@+id/nav_agendamentos"
-            android:icon="@drawable/ic_chat_black"
+            android:icon="@drawable/ic_agendamentos_black"
             android:title="Agendamentos" />
 
         <item
             android:id="@+id/nav_cadastro_agendamento"
-            android:icon="@drawable/ic_configuracoes_black"
+            android:icon="@drawable/ic_adicionar_white"
             android:title="Cadastro Agendamentos" />
         <!--<item
            android:id="@+id/nav_ajuda"
@@ -26,7 +26,7 @@
 
         <item
             android:id="@+id/nav_contato"
-            android:icon="@drawable/ic_local_black"
+            android:icon="@drawable/ic_call_black_24dp"
             android:title="Entre em Contato" />
 
 
@@ -40,7 +40,7 @@
           android:title="Configurações" />-->
         <item
             android:id="@+id/nav_sair"
-            android:icon="@drawable/ic_configuracoes_black"
+            android:icon="@drawable/ic_exit_to_app_black"
             android:title="Sair" />
 
     </group>
